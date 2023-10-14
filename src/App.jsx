@@ -8,14 +8,14 @@ function App() {
     }
 
     return (
-        <>
+        <main className='container'>
             <Button size='sm' onClick={click}>Menu</Button>
-            <Button onClick={click}>Menu</Button>
+            {/* <Button onClick={click}>Menu</Button>
             <Button size='lg' onClick={click}>Menu</Button>
             <Button variant='success' onClick={click}>Menu</Button>
             <Button variant='warning' onClick={click}>Menu</Button>
-            <Button variant='danger' onClick={click}>Menu</Button>
-        </>
+            <Button variant='danger' onClick={click}>Menu</Button> */}
+        </main>
     )
 }
 
