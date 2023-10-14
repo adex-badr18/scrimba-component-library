@@ -13,6 +13,8 @@ function App() {
                 <Toggle.Button>
                     <Star />
                 </Toggle.Button>
+
+                <Toggle.On>The toggle is on</Toggle.On>
             </Toggle>
 
             <hr />
