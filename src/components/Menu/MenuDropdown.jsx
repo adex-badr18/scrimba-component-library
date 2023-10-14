@@ -1,5 +1,5 @@
-export default function MenuDropdown({ children }) {
-    return (
+export default function MenuDropdown({ children, open }) {
+    return open && (
         <div className="menu-dropdown">
             {children}
         </div>
