@@ -32,3 +32,24 @@ button.btn-sm {
 button.btn-lg {
     padding: 13px 25px;
 }
+
+button.btn-success {
+    background: #ECFDF5;
+    border: 1px solid #047857;
+    border-radius: 6px;
+    color: #047857;
+}
+
+button.btn-warning {
+    background: #FFFBEB;
+    border: 1px solid #FBBF24;
+    border-radius: 6px;
+    color: #FBBF24;
+}
+
+button.btn-danger {
+    background: #FEF2F2;
+    border: 1px solid #F87171;
+    border-radius: 6px;
+    color: #F87171;
+}

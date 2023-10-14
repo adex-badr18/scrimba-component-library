@@ -9,7 +9,7 @@ function App() {
 
     return (
         <main className='container'>
-            <Button size='lg' onClick={click}>Menu</Button>
+            <Button size='lg' variant='danger' onClick={click}>Menu</Button>
             {/* <Button onClick={click}>Menu</Button>
             <Button size='lg' onClick={click}>Menu</Button>
             <Button variant='success' onClick={click}>Menu</Button>
