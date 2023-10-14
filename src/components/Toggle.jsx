@@ -6,12 +6,15 @@ export default function Toggle({ children }) {
     const [on, setOn] = useState(false);
 
     function toggle() {
+        console.log('Toggled')
         setOn(currentOn => !currentOn);
     }
 
     return (
-        <ToggleContext.Provider value={{on, toggle}}>
+        <ToggleContext.Provider value={{ on, toggle }}>
             {children}
         </ToggleContext.Provider>
     );
 }
+
+export { ToggleContext }

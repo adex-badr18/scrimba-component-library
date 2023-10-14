@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Menu from './components/Menu/index';
 import Star from './components/Star';
-import Toggle from './components/Toggle';
+import { Toggle } from './components/index';
 
 function App() {
     const sports = ["Tennis", "Pickleball", "Racquetball", "Squash"];
@@ -10,7 +10,9 @@ function App() {
     return (
         <main className='container'>
             <Toggle>
-                <Star />
+                <Toggle.Button>
+                    <Star />
+                </Toggle.Button>
             </Toggle>
 
             <hr />
