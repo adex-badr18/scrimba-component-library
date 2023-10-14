@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import Button from './components/Button/Button';
+import Menu from './components/Menu/Menu';
+import MenuButton from './components/Menu/MenuButton';
 
 function App() {
     function click(e) {
@@ -9,7 +10,9 @@ function App() {
 
     return (
         <main className='container'>
-            <Button size='lg' onClick={click}>Menu</Button>
+            <Menu>
+                <MenuButton>Sports</MenuButton>
+            </Menu>
         </main>
     )
 }
