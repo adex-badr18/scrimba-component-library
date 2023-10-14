@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ToggleContext } from "./Toggle"; 
+import { ToggleContext } from "./Toggle";
 
 export default function ToggleButton({ children }) {
     const {toggle} = useContext(ToggleContext);
