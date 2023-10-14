@@ -5,9 +5,10 @@ main {
     background-color: #1E1E1E;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
     padding: 40px 20px;
 }
 
@@ -105,4 +106,22 @@ button.btn-danger {
 
 .menu-dropdown div:last-of-type {
     border-radius: 0 0 6px 6px;
+}
+
+/* Star */
+.star {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+    user-select: none;
+    color: white;
+}
+
+.star.filled {
+    color: orange;
+}
+
+hr {
+    width: 100%;
 }
