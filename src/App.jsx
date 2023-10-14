@@ -2,16 +2,19 @@ import { useState } from 'react';
 import './App.css';
 import Menu from './components/Menu/index';
 import Star from './components/Star';
+import Toggle from './components/Toggle';
 
 function App() {
     const sports = ["Tennis", "Pickleball", "Racquetball", "Squash"];
 
     return (
         <main className='container'>
-            <Star />
-            
+            <Toggle>
+                <Star />
+            </Toggle>
+
             <hr />
-            
+
             <Menu>
                 <Menu.Button>Sports</Menu.Button>
 
