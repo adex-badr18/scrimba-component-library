@@ -3,6 +3,7 @@ import './App.css';
 import Menu from './components/Menu/index';
 import Star from './components/Star';
 import { Toggle } from './components/Toggle/index';
+import { BsStar, BsStarFill } from 'react-icons/bs';
 
 function App() {
     const sports = ["Tennis", "Pickleball", "Racquetball", "Squash"];
@@ -11,12 +12,14 @@ function App() {
         <main className='container'>
             <Toggle>
                 <Toggle.Button>
-                    <Star />
+                    <Toggle.On>
+                        <BsStarFill className='star filled' />
+                    </Toggle.On>
+
+                    <Toggle.Off>
+                        <BsStar className='star' />
+                    </Toggle.Off>
                 </Toggle.Button>
-
-                <Toggle.On>The toggle is on</Toggle.On>
-
-                <Toggle.Off>The toggle is off</Toggle.Off>
             </Toggle>
 
             <hr />

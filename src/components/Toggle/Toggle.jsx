@@ -6,7 +6,6 @@ export default function Toggle({ children }) {
     const [on, setOn] = useState(false);
 
     function toggle() {
-        console.log('Toggled')
         setOn(currentOn => !currentOn);
     }
 
