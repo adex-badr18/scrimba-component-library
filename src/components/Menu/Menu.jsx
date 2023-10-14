@@ -5,12 +5,12 @@ const MenuContext = createContext();
 export default function Menu({ children }) {
     const [open, setOpen] = useState(false);
 
-    function toggle() {
+    function toggleMenu() {
         setOpen(current => !current);
     }
 
     return (
-        <MenuContext.Provider value={false}>
+        <MenuContext.Provider value={{open, toggleMenu}}>
             <div className="menu">
                 {children}
             </div>
