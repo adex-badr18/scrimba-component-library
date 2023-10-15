@@ -2,24 +2,14 @@ import { useState } from 'react';
 import './App.css';
 import Menu from './components/Menu/index';
 import { Toggle } from './components/Toggle/index';
-import { BsStar, BsStarFill } from 'react-icons/bs';
+import Star from './components/Star';
 
 function App() {
     const sports = ["Home", "Products", "Services", "About", "Contact",];
 
     return (
         <main className='container'>
-            <Toggle>
-                <Toggle.Button>
-                    <Toggle.On>
-                        <BsStarFill className='star filled' />
-                    </Toggle.On>
-
-                    <Toggle.Off>
-                        <BsStar className='star' />
-                    </Toggle.Off>
-                </Toggle.Button>
-            </Toggle>
+            <Star />
 
             <hr />
 
