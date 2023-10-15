@@ -9,11 +9,11 @@ function App() {
 
     return (
         <main className='container'>
-            <Star />
+            <Star onChange={() => console.log('Toggled')} />
 
             <hr />
 
-            <Menu>
+            <Menu onOpen={() => console.log('Opened')}>
                 <Menu.Button>Menu</Menu.Button>
                 <Menu.Dropdown>
                     {menus.map(menu => {

@@ -1,13 +1,17 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const ToggleContext = createContext();
 
-export default function Toggle({ children }) {
+export default function Toggle({ children, onToggle }) {
     const [on, setOn] = useState(false);
 
     function toggle() {
         setOn(currentOn => !currentOn);
     }
+
+    useEffect(() => {
+        onToggle();
+    }, [on]);
 
     return (
         <ToggleContext.Provider value={{ on, toggle }}>
