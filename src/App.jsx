@@ -9,7 +9,7 @@ function App() {
 
     return (
         <main className='container'>
-            <Star onChange={() => {console.log('Star toggled')}} />
+            <Star />
 
             <hr />
 
