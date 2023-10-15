@@ -5,7 +5,7 @@ import { Toggle } from './components/Toggle/index';
 import Star from './components/Star';
 
 function App() {
-    const sports = ["Home", "Products", "Services", "About", "Contact",];
+    const menus = ["Home", "Products", "Services", "About", "Contact",];
 
     return (
         <main className='container'>
@@ -13,21 +13,14 @@ function App() {
 
             <hr />
 
-            <Toggle>
-                <Menu>
-                    <Toggle.Button>
-                        <Menu.Button>Menu</Menu.Button>
-                    </Toggle.Button>
-
-                    <Toggle.On>
-                        <Menu.Dropdown>
-                            {sports.map(sport => {
-                                return <Menu.Item key={sport}>{sport}</Menu.Item>
-                            })}
-                        </Menu.Dropdown>
-                    </Toggle.On>
-                </Menu>
-            </Toggle>
+            <Menu>
+                <Menu.Button>Menu</Menu.Button>
+                <Menu.Dropdown>
+                    {menus.map(menu => {
+                        return <Menu.Item key={menu}>{menu}</Menu.Item>
+                    })}
+                </Menu.Dropdown>
+            </Menu>
         </main>
     )
 }
