@@ -1,13 +1,15 @@
-import { Toggle } from "./Toggle";
+import { Toggle } from './Toggle/index';
 
-const Box = () => {
+export default function Box() {
     return (
-        <Toggle.Display>
-            {(on) => (
-                <div className={`box ${on ? 'filled' : ''}`}></div>
-            )}
-        </Toggle.Display>
+        <Toggle>
+            <Toggle.Button>
+                <Toggle.Display>
+                    {(on) => (
+                        <div className={`box ${on ? 'filled' : ''}`}></div>
+                    )}
+                </Toggle.Display>
+            </Toggle.Button>
+        </Toggle>
     )
 }
-
-export default Box;

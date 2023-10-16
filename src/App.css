@@ -126,3 +126,17 @@ button.btn-danger {
 hr {
     width: 100%;
 }
+
+.box {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid orangered;
+    background-color: #F5F5F5;
+    transition: background-color .3s ease-in-out;
+}
+
+.box.filled {
+    background-color: #000088;
+    border-color: #F5F5F5;
+}

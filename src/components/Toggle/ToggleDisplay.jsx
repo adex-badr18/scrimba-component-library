@@ -1,10 +1,8 @@
 import { useContext } from "react";
-import { ToggleContext } from "./Toggle/Toggle";
+import { ToggleContext } from "./Toggle";
 
-const ToggleDisplay = ({children}) => {
+export default function ToggleDisplay({ children }) {
     const { on } = useContext(ToggleContext);
 
     return children(on);
 }
-
-export default ToggleDisplay;

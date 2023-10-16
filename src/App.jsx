@@ -3,6 +3,7 @@ import './App.css';
 import Menu from './components/Menu/index';
 import { Toggle } from './components/Toggle/index';
 import Star from './components/Star';
+import Box from './components/Box';
 
 function App() {
     const menus = ["Home", "Products", "Services", "About", "Contact",];
@@ -10,6 +11,10 @@ function App() {
     return (
         <main className='container'>
             <Star />
+
+            <hr />
+
+            <Box />
 
             <hr />
 
