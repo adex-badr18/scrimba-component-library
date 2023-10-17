@@ -4,7 +4,7 @@ import useToggle from "../../hooks/useToggle";
 const MenuContext = createContext();
 
 export default function Menu({ children, onOpen }) {
-    const [open, toggleOpen] = useToggle();
+    const [open, toggleOpen] = useToggle(false, onOpen);
 
     return (
         <MenuContext.Provider value={{ open, toggleOpen }}>
