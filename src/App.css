@@ -157,3 +157,21 @@ div.avatar {
     width: 100%;
     height: 100%;
 }
+
+.avatar-letters {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #DC143C;
+    color: #F5F5F5;
+}
+
+.avatar-icon {
+    background-color: #F87171;
+}
+
+.avatar > svg {
+    height: 100%;
+    width: 100%;
+    color: #F5F5F5;
+    transform: translateY(10px);
+}
