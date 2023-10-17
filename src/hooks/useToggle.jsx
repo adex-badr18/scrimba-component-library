@@ -1,7 +1,10 @@
 import { useState } from "react";
 import useEffectOnUpdate from "./useEffectOnUpdate";
 
-const useToggle = (initialValue = false, onToggle) => {
+export default function useToggle({
+    initialValue = false,
+    onToggle = () => { }
+}) {
     const [on, setOn] = useState(initialValue);
 
     const toggle = () => {
@@ -13,4 +16,3 @@ const useToggle = (initialValue = false, onToggle) => {
     return [on, toggle];
 }
 
-export default useToggle;
