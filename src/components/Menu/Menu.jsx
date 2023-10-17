@@ -1,12 +1,10 @@
 import React, { createContext, useState } from "react";
-import { Toggle } from '../Toggle/index';
+import useToggle from "../../hooks/useToggle";
 
 export default function Menu({ children, onOpen }) {
     return (
-        <Toggle onToggle={onOpen}>
-            <div className="menu">
-                {children}
-            </div>
-        </Toggle>
+        <div className="menu">
+            {children}
+        </div>
     )
 }
