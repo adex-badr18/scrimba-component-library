@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import './App.css';
 import Menu from './components/Menu/index';
-import { Toggle } from './components/Toggle/index';
 import Star from './components/Star';
 import Box from './components/Box';
 
