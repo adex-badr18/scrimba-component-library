@@ -1,19 +1,18 @@
 import { useState } from 'react';
 import { Toggle } from './Toggle/index';
+import useToggle from '../hooks/useToggle';
 import { BsStar, BsStarFill } from 'react-icons/bs';
 
 export default function Star({ onChange }) {
-    return (
-        <Toggle onToggle={onChange}>
-            <Toggle.Button>
-                <Toggle.On>
-                    <BsStarFill className='star filled' />
-                </Toggle.On>
+    const [on, toggle] = useToggle();
 
-                <Toggle.Off>
-                    <BsStar className='star' />
-                </Toggle.Off>
-            </Toggle.Button>
-        </Toggle>
+    return (
+        <>
+            {
+                on ?
+                    <BsStarFill onClick={toggle} className='star filled' /> :
+                    <BsStar onClick={toggle} className='star' />
+            }
+        </>
     )
 }
