@@ -12,6 +12,10 @@ main {
     padding: 40px 20px;
 }
 
+section {
+    padding: 1em;
+}
+
 button {
     padding: 9px 17px;
     background: #E5E7EB;
@@ -142,6 +146,13 @@ hr {
 }
 
 /* Avatar */
+section.avatar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
 div.avatar {
     width: 100px;
     height: 100px;

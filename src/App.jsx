@@ -9,28 +9,30 @@ function App() {
 
     return (
         <main className='container'>
-            <Star />
+            <section>
+                <Star />
+            </section>
 
-            <hr />
+            <section>
+                <Box />
+            </section>
 
-            <Box />
+            <section>
+                <Menu onOpen={() => console.log('Menu toggled')}>
+                    <Menu.Button>Menu</Menu.Button>
+                    <Menu.Dropdown>
+                        {menus.map(menu => {
+                            return <Menu.Item key={menu}>{menu}</Menu.Item>
+                        })}
+                    </Menu.Dropdown>
+                </Menu>
+            </section>
 
-            <hr />
-
-            <Menu onOpen={() => console.log('Menu toggled')}>
-                <Menu.Button>Menu</Menu.Button>
-                <Menu.Dropdown>
-                    {menus.map(menu => {
-                        return <Menu.Item key={menu}>{menu}</Menu.Item>
-                    })}
-                </Menu.Dropdown>
-            </Menu>
-
-            <hr />
-
-            <Avatar src='/dp.png' alt='Badrudeen' />
-            <Avatar>AZ</Avatar>
-            <Avatar />
+            <section className='avatar-container'>
+                <Avatar src='/dp.png' alt='Badrudeen' />
+                <Avatar>AZ</Avatar>
+                <Avatar />
+            </section>
         </main>
     )
 }
