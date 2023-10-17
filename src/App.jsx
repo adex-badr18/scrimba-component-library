@@ -28,7 +28,7 @@ function App() {
 
             <hr />
 
-            <Avatar src='/dp-bg.png' alt='Badrudeen' />
+            <Avatar src='/dp.png' alt='Badrudeen' />
             <Avatar>AZ</Avatar>
             <Avatar />
         </main>
