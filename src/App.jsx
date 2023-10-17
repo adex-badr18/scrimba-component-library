@@ -8,11 +8,11 @@ function App() {
 
     return (
         <main className='container'>
-            {/* <Star /> */}
+            <Star />
 
             <hr />
 
-            {/* <Box /> */}
+            <Box />
 
             <hr />
 
