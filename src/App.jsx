@@ -2,6 +2,7 @@ import './App.css';
 import Menu from './components/Menu/index';
 import Star from './components/Star';
 import Box from './components/Box';
+import Avatar from './components/Avatar';
 
 function App() {
     const menus = ["Home", "Products", "Services", "About", "Contact",];
@@ -24,6 +25,12 @@ function App() {
                     })}
                 </Menu.Dropdown>
             </Menu>
+
+            <hr />
+
+            <Avatar src='/dp-bg.png' alt='Badrudeen' />
+            <Avatar>AZ</Avatar>
+            <Avatar />
         </main>
     )
 }
